@@ -1,0 +1,55 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import SGDRegressor
+from sklearn.preprocessing import StandardScaler
+
+data = pd.read_excel("home_energy_consumption_dataset.xlsx")
+
+data.columns = data.columns.str.strip()
+
+print(data.columns)
+
+
+X = data[[
+"temperature",
+"house size",
+"num people",
+"ac hours",
+"heater hours",
+"efficiency"
+]]
+
+y = data["energy_consumption"]
+
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+
+model = SGDRegressor()
+model.fit(X_scaled, y)
+
+ 
+y_pred = model.predict(X_scaled)
+
+
+new_data = pd.DataFrame({
+"temperature": [25],
+"house size": [120],
+"num people": [4],
+"as hours": [6],
+"heater hours": [2],
+"efficiency": [0.8]
+
+})
+
+new_data_scaled = scaler.transform(new_data)
+pred = model.predict(new_data_scaled)
+
+print("Predicted Energy Consumption:", pred)
+
+plt.scatter(y, y_pred)
+plt.xlabel("Real Energy Consumption")
+plt.ylabel("Predicted Energy Consumption")
+plt.title("Real vs Predicted Energy Consumption")
+plt.show()

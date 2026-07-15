@@ -2,22 +2,25 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import SGDRegressor
 from sklearn.metrics import mean_squared_error
+from sklearn.tree import DecisionTreeRegressor
 
 data = pd.read_excel("Material_Strength_Temperature.xlsx")
+data.columns
 
 print(data.head())
 print(data.info())
+data.describe()
 
-
-data = data.dropna()
+data.dropna(inplace=True)
 print(data.isnull().sum())
+
 
 
 X = data[["Temperature"]]
 y = data["UTS"]
 
 
-model = SGDRegressor()
+model = SGDRegressor(loss="squared_error",learnin_rate="constant",eta0=0.0001,max_iter=1000)
 model.fit(X, y)
 
 
@@ -43,4 +46,4 @@ plt.plot(X, model.predict(X), color="red", label="Model Line")
 plt.xlabel("Temperature")
 plt.ylabel("UTS")
 plt.legend()
-plt.show()
+plt.show() 

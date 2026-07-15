@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd 
 import matplotlib.pyplot as plt
 
 data = pd.read_excel("taxi_fare_dataset.xlsx")
@@ -12,6 +12,7 @@ print(data.info())
 
 
 data = data.dropna()
+data.duplicated().sum()
 
 print(data.isnull().sum())
 print(type(data))

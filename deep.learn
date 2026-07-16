@@ -1,0 +1,34 @@
+Linear Regression:(output is numerical value)
+linear regression is an algorithm used too find the relationship between input variable x &  outpit variable y 
+model find one line betweenx,y
+Formula: y = ax +b: Score = a x study hours +b    studyhours (feature), score (target)
+we have 2 main method: model.fit(x_train, y_train):teach to mode with training ,model.predict(x_test) for predicting new value
+..
+..
+
+KNN:(K-Nearest neighbors)
+the model finds the Nearest data points that have a class.
+its mainly used for classification problems .its a supervised algorithm 
+Example : Classifying an email as spam or not smap.
+COde: from sklearn.neighbors import KNeighborsClassifier
+model.fit(x_train, y_train)
+prediction = model.predict(x_test)
+..
+..
+Decition tree (classification)the model take a Decition based on condition 
+
+1-Decition Tree Classifier: used for classification problems .like:that imail is spam or not
+from sklearn.tree import DecitionTreeClassifire
+
+2-Decition Tree Regressor: output is value
+for predicting value like :  house price
+from sklearn.tree import DecitionTreeRegressor
+part of Decition Treez:
+root node , Decition node, leaf node .
+..
+.. 
+one model 
+logisic Regression:is a  classification  algorithm used for predicting classes. 
+Example:patient ..sick / healthy
+from sklearn.linear_model import logisicRegression
+output is class .

@@ -3,6 +3,16 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import SGDRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.tree import DecisionTreeRegressor
+from sklearn. model_selection import train_test_split
+
+
+x_train,x_test, y_train, y_test = train_test_split(
+    x,
+    y,
+    test_size=0.2,
+    random_state=42    
+    )
+
 
 data = pd.read_excel("Material_Strength_Temperature.xlsx")
 data.columns

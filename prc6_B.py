@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 data = pd.read_excel("taxi_fare_dataset.xlsx")
 
 from sklearn.linear_model import SGDRegressor
+from sklearn.model_selection import train_test_split
  
 
 print(data.head())
@@ -21,8 +22,14 @@ x = data[["distance", "duration", "traffic", "speed", "rain"]]
 y = data["fare"]
 
 
+x_train, y_test, y_train, y_test = train_test_split(
+    x,
+    y,
+    test_size=0.2
+    random_state=42
+)
 model = SGDRegressor()
-model.fit(x, y)
+model.fit(x_train, y_train)
 
 print("a (coef):", model.coef_)
 print("b (intercept):", model.intercept_)

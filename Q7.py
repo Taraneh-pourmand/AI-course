@@ -98,4 +98,4 @@
 
 #13-SVC: the model finds the best decision boundary  that has the maximum  diatance from 2 groups(this distance is called the margin)
 #Code: from sklearn,SVM import SVC.
-#import parameters: C, Kernel(linear, rbf, poly), Gamma 
+#import parameters: C, Kernel(linear, rbf, poly), Gamma .

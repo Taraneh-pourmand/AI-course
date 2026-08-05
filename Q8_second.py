@@ -22,12 +22,8 @@ from sklearn.svm import SVR
 x_train,x_test,y_train,y_test = train_test_split(
     x,
     y,
-    test_size=0.2,
-    random_state=42
- )
-model = SVR()
-
-from sklearn.svm import SVR
+    test_size=0.2,gi
+    
 model = SVR()
 
 hyperparameter_configurations={

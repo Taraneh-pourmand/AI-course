@@ -80,7 +80,7 @@ print(grid.best_score_)
 
 
 from sklearn.metrics import r2_score
-
+git 
 y_pred = grid.predict(x_test)
 
 test_score = r2_score(y_test,y_ped)

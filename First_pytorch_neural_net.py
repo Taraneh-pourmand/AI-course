@@ -39,12 +39,27 @@ class NeuralNetwork(nn.Module):
   self.output = nn.Linear(64, 10)
 
 def forward(self, x):
-
  x = self.flatten(x)
 
-x = torch.relu(self .layer1(x))
-x = torch.relu(self .layer2(x))
+import torch.nn as nn
 
-x = self.output(x)
-
-return x
+class NeuralNetwork(nn.Module):
+  def __init__(self):
+   super().__init__()
+   
+   self.flatten = nn.Flatten()
+   self.layer1 = nn.Linear(784, 128)
+   self.layer2 = nn.Linear(128, 64)
+   self.output = nn.Linear(64, 10)
+   
+   
+  def forward(self, x):
+    x = self.flatten(x)
+    x = torch.relu(self.layer1(x))
+    x = torch.relu(self.layer2(x))
+    x = self.output(x)
+    return x 
+  
+  
+model = NeuralNetwork()
+print(model)

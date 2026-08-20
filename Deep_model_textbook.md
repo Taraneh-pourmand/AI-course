@@ -1,6 +1,6 @@
 Artifical Neural Network have become the backbone of modern Ai and deep learning,among them ANN(Artificial neural Network),  CNN(Convolution Neural Network),  RNN(Recurrent Neural Network) are the most widely used architecture.
 
-1.Artificial Neural Network (ANN)is a network of interconnected neurons where data flows forward from input to output.
+1. Artificial Neural Network (ANN)is a network of interconnected neurons where data flows forward from input to output.
 it can have one or more hidden layers , allowing it to learn complex pattern from structured data.
 
 Features:
@@ -19,7 +19,7 @@ Requires careful network
 
 =======================================================
 
-2.Convolutional Neural Network (CNN) is a type of ANN designed to process grid-like data such as images or videos. It uses convolutional and pooling layers to automatically extract features and reduce dimensionality.
+2. Convolutional Neural Network (CNN) is a type of ANN designed to process grid-like data such as images or videos. It uses convolutional and pooling layers to automatically extract features and reduce dimensionality.
 
 Features:
 ..Specialized for image and video processing.
@@ -36,7 +36,7 @@ Requires large amounts of training data.
 Cannot inherently encode object position or orientation.
 
 ==========================================================
-3.Sequence Modelling:
+3. Sequence Modelling:
 
 Sequence Modelling is a machine learning approach used to process, understand, predict, or generate sequential data, where the order and context of the data are important.
 
@@ -71,7 +71,7 @@ Video and audio analysis
 ===================================================================
 
 
-4.Recurrent Neural Network (RNN):is designed for sequential data with recurrent connections that allow information to persist across time steps. It is particularly useful for modeling time dependencies.
+4. Recurrent Neural Network (RNN):is designed for sequential data with recurrent connections that allow information to persist across time steps. It is particularly useful for modeling time dependencies.
 
 Features:
 
@@ -97,7 +97,7 @@ RNN= Sequence
 
 ===========================================================
 
-5-LSTM = 
+5. LSTM = 
 A Long short-term memory (LSTM) is a type of Recurrent Neural Network specially designed to prevent the neural network output for a given input from either decaying or exploding as it cycles through the ((feedback loops)) . 
 
 **Feedback Loops::
@@ -130,7 +130,7 @@ are application to a number of sequence learning problems including-->
 
 =============================================================  
 
-6-Autoencoder :
+6. Autoencoder :
 
 ++Definition
 An Autoencoder is a type of neural network that learns to compress input data into a smaller representation and then reconstruct the original data from that representation.
@@ -228,7 +228,7 @@ Input → Encoder → Latent Space → Decoder → Output
 ==============================================================
 
 
-7- Architecture:
+7. Architecture:
 
 Architecture refers to the structure and organization of a machine 
 
@@ -237,7 +237,7 @@ input layer --> Hidden layer --> Output layer
 
 ============================================================
 
-8- Generative Adversarial Network (GAN)
+8. Generative Adversarial Network (GAN)
 
 A Generative Adversarial Network (GAN) is a generative model that learns from existing data to generate new and realistic data.
 

@@ -97,7 +97,7 @@ RNN= Sequence
 
 ===========================================================
 
-LSTM = 
+5-LSTM = 
 A Long short-term memory (LSTM) is a type of Recurrent Neural Network specially designed to prevent the neural network output for a given input from either decaying or exploding as it cycles through the ((feedback loops)) . 
 
 **Feedback Loops::
@@ -130,7 +130,7 @@ are application to a number of sequence learning problems including-->
 
 =============================================================  
 
-Autoencoder 
+6-Autoencoder :
 
 ++Definition
 An Autoencoder is a type of neural network that learns to compress input data into a smaller representation and then reconstruct the original data from that representation.
@@ -169,7 +169,6 @@ The process can be summarized as:
 Input → Encoder → Latent Representation → Decoder → Reconstructed Output
 
 For example:
-
 Original Image → Compression → Latent Representation → Reconstruction → Reconstructed Image
 
 During training, the Autoencoder learns to make the reconstructed output as close as possible to the original input.
@@ -229,7 +228,7 @@ Input → Encoder → Latent Space → Decoder → Output
 ==============================================================
 
 
-2. Architecture:
+7- Architecture:
 
 Architecture refers to the structure and organization of a machine 
 
@@ -238,7 +237,7 @@ input layer --> Hidden layer --> Output layer
 
 ============================================================
 
- Generative Adversarial Network (GAN)
+8- Generative Adversarial Network (GAN)
 
 A Generative Adversarial Network (GAN) is a generative model that learns from existing data to generate new and realistic data.
 
